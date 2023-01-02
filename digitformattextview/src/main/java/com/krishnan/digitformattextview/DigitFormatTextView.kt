@@ -5,7 +5,6 @@ import android.icu.text.DecimalFormat
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatTextView
 
-
 class DigitFormatTextView @JvmOverloads constructor(
     context: Context,
     attributes: AttributeSet,
