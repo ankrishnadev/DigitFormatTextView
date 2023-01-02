@@ -99,9 +99,7 @@ class DigitFormatTextView @JvmOverloads constructor(
                 val result = DecimalFormat("##.##").format(amount.toDouble() / 100 / 100 / 10)
                 if (result.toDouble() > 2) "$result Lakhs" else "$result Lakh"
             }
-            else -> {
-                value
-            }
+            else -> { value }
         }
     }
 }
