@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">DigitFormatTextView</string>
+    <string name="your_digits">Your Digits</string>
+    <string name="enter_the_amount">Enter the amount</string>
+    <string name="set_value">Set value</string>
+    <string name="show_in_letters">Show in words</string>
+    <string name="digit_format_textview">Digit Format Textview</string>
 </resources>

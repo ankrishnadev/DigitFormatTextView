@@ -15,8 +15,12 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.switchOnOffLetter.setOnCheckedChangeListener { compoundButton, b ->
-            binding.digitFormatTextView.initView("$", b)
+        binding.digitFormatTextView.initView("\u20B9")
+        binding.switchOnOffLetter.setOnCheckedChangeListener { compoundButton, onOff ->
+            binding.digitFormatTextView.apply {
+                initView("\u20B9", onOff)
+                setValue(binding.inputBox.text.toString())
+            }
         }
 
         binding.submit.setOnClickListener {
