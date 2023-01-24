@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.digitFormatTextView.initView("\u20B9")
-        binding.switchOnOffLetter.setOnCheckedChangeListener { compoundButton, onOff ->
+        binding.switchOnOffLetter.setOnCheckedChangeListener { _, onOff ->
             binding.digitFormatTextView.apply {
                 initView("\u20B9", onOff)
                 setValue(binding.inputBox.text.toString())
@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        binding.inputBox.doOnTextChanged { text, start, before, count ->
+        binding.inputBox.doOnTextChanged { text, start, _, _ ->
             if (start < 13) {
                 binding.digitFormatTextView.setValue(text.toString())
             } else {
