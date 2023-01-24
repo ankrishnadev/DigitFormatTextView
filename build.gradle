@@ -13,6 +13,12 @@ buildscript {
     }
 }
 
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
+}
+
 ext {
     compileSdk = 33
     minSdk = 26
